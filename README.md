@@ -88,7 +88,7 @@ Once the containers are up and running, the ETL pipeline will automatically exec
 
 ## **Database Schema**
 - The project uses a PostgreSQL database with the following schema to store the user data:
-![Imgur](https://imgur.com/n3n9MVk)
+![Database Schema](https://i.imgur.com/n3n9MVk.png)
 #### Table Explanation:
 
 * **user_id**: A unique identifier for each user.
