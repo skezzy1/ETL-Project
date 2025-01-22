@@ -9,6 +9,9 @@ SELECT DISTINCT domain
 FROM users;
 
 -- Query 3: Retrieve the details of users whose `signup_date` is within the last 7 days
+ALTER TABLE users
+ALTER COLUMN signup_date TYPE TIMESTAMP USING signup_date::TIMESTAMP; 
+
 SELECT * FROM users
 WHERE signup_date >= CURRENT_DATE - INTERVAL '7 days';
 
